@@ -1,0 +1,253 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.top{
+	height: 37px;
+	background-color: #148dcb;
+	width: 100%;
+	
+}
+.top img{
+	float: left;
+	display: block;
+	margin-top: 5px;
+	margin-left: 18px;
+}
+.pro{
+	float: left;
+}https://github.com/techstarwanghuihui/techstarwanghuihui.git
+.pro li{
+	
+	list-style: none;
+	width: 110px;
+	float: left;
+	color: #ffffff;
+	
+}
+.source{
+	padding-left: 20px;
+	height: 37px;
+	font-size:17px;
+	line-height: 37px;
+}
+.pro .console{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	height: 17px;
+	line-height: 17px;
+	border-left: 2px solid #2197d1;
+	border-right: 2px solid #2197d1;
+}
+.nav{
+	float: right;
+}
+.nav li{
+	height: 37px;
+	list-style: none;
+	font-size: 10px;
+	float: left;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	color:#ffffff;
+	border-left: 1px solid #008fbf
+
+}
+.nav .name{
+	font-size: 17px;
+	line-height: 37px;
+}
+
+.nav li:nth-of-type(2){
+	margin-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	height: 17px;
+	line-height: 17px;
+	border-left: 2px solid #2197d1;
+	border-right: 2px solid #2197d1;
+}
+.nav li:nth-of-type(3){
+	line-height: 37px;
+}
+
+.icon1{
+	display: block;
+	float:right;
+	font-size: 6px;
+	margin-top: 6px;
+	margin-right: 20px;
+
+}
+.icon2{
+
+	display: block;
+	float: right;
+	margin-top: 7px;
+	
+}
+.icon3{
+	display: block;
+	float: right;
+	margin-top: 13px;
+	
+}
+.nav span{
+	display: block;
+	width: 29px;
+	height: 18px;
+	float: left;
+	background-color: #51bff2;
+	border-radius: 2px;
+	margin-top: 10px;
+	margin-left: -1px;
+	margin-right: 3px;
+	text-align: center;
+	line-height: 18px;
+}
+.nav p{
+	float: left;  
+	line-height: 37px;	
+}
+.nav a{
+	text-decoration: none;
+	color:#ffffff;
+}
+.iconfont{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ .icon-left{
+	display:none;
+
+}
+
+.pro li:hover{
+	background-color: #0087b4;
+}
+.nav li:hover{
+	background-color: #0087b4;
+}
+.icon4{
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+
+
+
+
+.leftmenu{
+	width: 130px;
+	height: 630px;
+	background-color: #283038;
+	color:#ffffff;
+}
+.leftmenu p{
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+
+}
+
+.leftmenu p:nth-of-type(1){
+	background-color: #384454;
+}
+.leftmenu .user,.consy{
+	height: 31px;
+
+}
+.leftmenu p:hover{
+	cursor: pointer;	
+}
+.leftmenu .user span,.consy span{
+	display: block;
+	float: left;
+}
+.leftmenu .consy:hover{
+	cursor: pointer;	
+}
+.leftmenu .icon4{
+	font-size: 4px;
+	margin-right: 9px;
+}
+.leftmenu .icon5{
+	display: block;
+	float: right;
+	font-size: 9px;
+	margin-top: 2px;
+	margin-right: 12px;
+}
+.mangement {
+	padding-bottom: 10px;
+	background-color: #283038;
+}
+.mangement li{
+	height: 23px;
+	margin-left: 20px;
+	
+}
+.mangement li:hover{
+	cursor: pointer;	
+}
+.tri2,.tri22{
+	margin-top: 0px;
+	display: none;
+}
+
+
+/*帮助文档*/
+.top{
+	position: relative;
+}
+.help{
+	float: right;
+	position: relative;
+	top: 0px;
+	right: 130px;
+	display: none;
+}
+.help li{
+	
+	list-style: none;
+	line-height: 30px;
+
+	width: 110px;
+	height: 30px;
+	border: 1px solid #dddddd;
+}
+.help li a{
+	margin-left: 10px;
+	text-decoration: none;
+}
+.help li:hover{
+	background-color: #f5f5f5;
+}
+/*个人中心*/
+.top{
+	position: relative;
+}
+.leave{
+	float: right;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	display: none;
+}
+.leave li{
+	
+	list-style: none;
+	line-height: 30px;
+	text-align: center;
+	width: 130px;
+	height: 30px;
+	border: 1px solid #dddddd;
+}
+
+.leave li:hover{
+	background-color: #f5f5f5;
+	margin-left: 10px;
+}

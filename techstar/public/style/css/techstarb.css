@@ -1,0 +1,23 @@
+#top{
+	height: 37px;
+	background-color: #148dcb;
+	width: 100%;
+	
+}
+#accordion-636066{
+	width: 130px;
+	height: 768px;
+	background-color: #283038;
+	color:#ffffff;
+}
+.accordion-toggle{
+	color:#ffffff;
+
+}
+.accordion-inner {
+    padding: 9px 15px;
+    border: 0px !important;
+}
+.icon{
+	float: left;
+}

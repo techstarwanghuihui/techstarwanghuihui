@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>北京恒泰实达科技股份有限公司</title>
+		<link rel="icon" href="images/logo.ico" type="image/ico">
+	<link rel="stylesheet" href="style/css/techstar.css">
+	<link rel="stylesheet" href="style/css/demo.css">
+    <link rel="stylesheet" href="style/css/iconfont.css">
+	
+                    
+</head>
+<body>
+	<!-- 头部菜单 -->
+	
+	<div class="top">
+		<a href="http://www.techstar.com.cn/" target=view_blank><img src="images/logo.jpg" alt=""></a>
+		
+		<ul class="pro">
+			<li class="source">能源互联</li>
+			<li class="console">控制台<i class="icon1 iconfont">&#xe60d;</i></li>
+		</ul>
+		<ul class="nav">
+			<li class="name"> 
+				<a href="http://www.techstar.com.cn/">北京恒泰实达科技股份有限公司</a>
+			</li>
+			<li class="mobile "> 
+				<i class="icon iconfont">&#xe611;</i>移动客户端
+				<i class="icon2 iconfont">&#xe60d;</i>
+			</li>
+			
+			<li class="help-doc">
+				帮助与文档 
+				<i class="icon2 iconfont">&#xe60d;</i>
+			</li>
+			<li class="leave-out">
+				<span>普通</span>
+				<p>程序员……</p> 
+				<i class="icon3 iconfont">&#xe60d;</i>
+			</li>
+		</ul>
+	</div>
+	<!-- 帮助文档 -->
+	<ul class="help">
+
+		<li><a href="#">新版FAQ</a></li>
+		<li><a href="#">帮助与文档</a></li>
+		<li><a href="#">论坛</a></li>
+	</ul>
+	<ul class="leave">
+		<li>退出</li>
+	</ul>
+
+
+<!-- 左边菜单 -->
+	<div class="leftmenu">
+		<ul>
+			<li>
+				<p class="sidebar">
+					<i class="icon-left icon iconfont">&#xe613;</i>
+					<i class="icon-right icon iconfont">&#xe613;</i>
+				</p>
+			</li>
+			<li>
+				<p class="user">
+					<i class="tri1 icon4 iconfont">&#xe60d;</i>
+					<i class="tri2 icon4 iconfont">&#xe612;</i>
+					<span>用户中心</span>
+					<i class="icon5 iconfont">&#xe60c;</i>
+				</p>
+			</li>
+			<li>
+				<ul class="mangement">
+					<li>
+						<span>组织机构管理</span>
+					</li>
+					<li>
+						<span>成员管理</span>
+					</li>
+					<li>
+						<span>
+						权限管理
+						</span>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p class="consy">
+					<i class="tri11 icon4 iconfont">&#xe60d;</i>
+					<i class="tri22 icon4 iconfont">&#xe612;</i>
+					<span>微网监控系统</span>
+					<i class="icon5 iconfont">&#xe60c;</i>
+				</p>
+			</li>
+		</ul>	
+	</div>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script>
+
+	//左菜单收回
+		$(".icon-right").click(function(){
+			$(this).css("display","none");
+			$(".icon-left").css("display","block");
+			$(".sidebar").css("text-align","left");
+			$(".user span").css("display","none");
+			$(".user .icon5").css("display","none");
+			$(".mangement").css("display","none");
+			$(".leftmenu").css("width","30px");
+			$(".consy span").css("display","none");
+			$(".consy .icon5").css("display","none");
+		})
+		$(".icon-left").click(function(){
+			$(this).css("display","none");
+			$(".icon-right").css("display","block");
+			$(".sidebar").css("text-align","center");
+			$(".user span").css("display","block");
+			$(".user .icon5").css("display","block");
+			$(".mangement").css("display","block");
+			$(".leftmenu").css("width","130px");
+			$(".consy span").css("display","block");
+			$(".consy .icon5").css("display","block");
+		})
+		
+		// 控制“用户中心”的下拉和收回
+		
+		$(".tri1").click(function(){
+				$(".tri1").css("display","none");
+				$(".tri2").css("display","block");
+				$(".mangement").slideToggle(500);
+			
+			
+		})
+		$(".tri2").click(function(){
+				$(".tri2").css("display","none");
+				$(".tri1").css("display","block");
+				$(".mangement").slideToggle(500);
+			
+			
+		})
+		// 控制“微网监控系统”的下拉和收回
+		
+		$(".tri11").click(function(){
+				$(".tri11").css("display","none");
+				$(".tri22").css("display","block");
+				
+			
+			
+		})
+		$(".tri22").click(function(){
+				$(".tri22").css("display","none");
+				$(".tri11").css("display","block");
+				
+			
+			
+		})
+		// 帮助文档鼠标移入事件
+		$(".help-doc").click(function(){
+			$(".help").css("display","block")
+		})
+		$(".help").mouseleave(function(){
+			$(this).css("display","none")
+		})
+		// 个人中心的鼠标
+		$(".leave-out").click(function(){
+			$(".leave").css("display","block")
+		})
+		$(".leave").mouseleave(function(){
+			$(".leave").css("display","none")
+		})
+
+	</script>
+</body>
+</html>

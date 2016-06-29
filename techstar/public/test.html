@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style> 
+		.hh
+		{
+		width:100px;
+		height:75px;
+		background-color:yellow;
+		border:1px solid black;
+		}
+		.hh.div2
+		{
+		transform:rotate(90deg);
+		-ms-transform:rotate(90deg); /* IE 9 */
+		-moz-transform:rotate(90deg); /* Firefox */
+		-webkit-transform:rotate(90deg); /* Safari and Chrome */
+		-o-transform:rotate(90deg); /* Opera */
+		}
+	</style>
+</head>
+	
+	
+<body>
+
+<div class="hh">你好。这是一个 div 元素。</div>
+<!-- 
+<div id="div2">你好。这是一个 div 元素。</div> -->
+
+
+	
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script>
+	$("div").click(function(){
+		alert("jell");
+		$("div").addClass("div2");
+		alert("aa")
+	})
+</script>
+</html>

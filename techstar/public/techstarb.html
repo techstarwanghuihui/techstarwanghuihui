@@ -10,51 +10,50 @@
     <link rel="stylesheet" href="style/css/iconfont.css">
 </head>
 <body>
-	<div class="container-fluid">
+	<div >
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="navbar">
-				<div  id="top" class="navbar-inner">
+				<div  id="top">
 					<div class="container-fluid">
-						<a class="btn btn-navbar" data-target=".navbar-responsive-collapse" data-toggle="collapse"></a> <a class="brand" href="#">能源互联</a>
+						<a href="http://www.techstar.com.cn/" target=view_blank><img class="logo" src="images/logo.jpg" alt=""></a>
+					 
 						<div class="nav-collapse collapse navbar-responsive-collapse">
-							<ul class="nav">
-								<li class="active">
-									<a href="#">控制台</a>
-									<!-- <i class="icon iconfont" >&#xe60d;</i> -->
-								</li>
-								<li>
-									<br />
-								</li>
-							</ul>
+							<a class="brand" href="#">能源互联</a>
+							<ul class="nav nav-pills">
+							      <li class="dropdown">
+							        <a class="dropdown-toggle"
+							           data-toggle="dropdown"
+							           href="#">
+							            控制台
+							            <i style="margin-left:10px" class="tri icon iconfont">&#xe60d;</i>
+							          </a>
+							        <ul class="dropdown-menu">
+							          <!-- links -->
+							        </ul>
+							      </li>
+						   	 </ul>
+							
 							<ul class="nav pull-right">
 								<li>
-									<a href="http://www.techstar.com.cn/" target=view_blank>北京恒泰实达科技股份有限公司</a>
+									<a class="techstar" href="http://www.techstar.com.cn/" target=view_blank>北京恒泰实达科技股份有限公司</a>
 								</li>
-								<li class="divider-vertical">
-								</li>
-								<li class="dropdown">
-									<i class="icon iconfont">&#xe611;</i>
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#">移动客户端</a>
+								
+								<li class="dropdown dropdown-mob">
+									
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class=" icon iconfont">&#xe611;</i><span>移动客户端</span><i  class="tri icon iconfont">&#xe60d;</i></a>
+									
 									<ul class="dropdown-menu">
 										<li>
-											<a href="#">下拉导航1</a>
-										</li>
-										<li>
-											<a href="#">下拉导航2</a>
-										</li>
-										<li>
-											<a href="#">其他</a>
-										</li>
-										<li class="divider">
-										</li>
-										<li>
-											<a href="#">链接3</a>
-										</li>
+											<a href="#">新版FAQ</a>
+										</li>						
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#">帮助与文档</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">帮助与文档
+										<i class="tri icon iconfont">&#xe60d;</i>
+									</a>
+
 									<ul class="dropdown-menu">
 										<li>
 											<a href="#">新版FAQ</a>
@@ -68,6 +67,16 @@
 										
 									</ul>
 								</li>
+								<li class="dropdown-user">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">用户中心<i class="tri icon iconfont">&#xe60d;</i></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">退出</a>
+										</li>
+										
+										
+									</ul>
+								</li>
 							</ul>
 						</div>
 						
@@ -77,8 +86,17 @@
 			</div>
 			<div class="accordion" id="accordion-636066">
 				<div class="accordion-group">
+					<div class="sidebar">
+						<i class="icon-left icon iconfont">&#xe613;</i>
+						<i class="icon-right icon iconfont">&#xe613;</i>
+					</div>
+					
 					<div class="accordion-heading">
-						<a class="accordion-toggle" data-parent="#accordion-636066" data-toggle="collapse" href="#accordion-element-89280">用户中心</a>
+						<i class="tri1  iconfont ">&#xe60d;</i>
+						<a class="accordion-toggle" data-parent="#accordion-636066" data-toggle="collapse" href="#accordion-element-89280"><!-- <i class="tri1  iconfont">&#xe60d;</i> --><span class="accordion-toggleuser">用户中心</span>
+						<!-- <i class="tri2 icon iconfont">&#xe60c;</i> --></a>
+						<i class="tri2 icon iconfont">&#xe60c;</i>
+		
 					</div>
 					<div class="accordion-body collapse in" id="accordion-element-89280">
 						<div class="accordion-inner">
@@ -94,9 +112,14 @@
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<a class="accordion-toggle" data-parent="#accordion-636066" data-toggle="collapse" href="#accordion-element-309974">微网监控系统</a>
+						<i class="tri1 icon iconfont">&#xe60d;</i>
+						<a class="accordion-toggle" data-parent="#accordion-309974" data-toggle="collapse" href="#accordion-element-309974">
+							<!-- <i class="tri1 icon iconfont">&#xe60d;</i> -->
+							<span class="accordion-toggleuser">微网监控系统</span>
+						<!-- <i class="tri2 icon iconfont">&#xe60c;</i> --></a>
+						<i class="tri2 icon iconfont">&#xe60c;</i>
 					</div>
-					<div class="accordion-body collapse" id="accordion-element-309974">
+					<div class="accordion-body collapse " id="accordion-element-309974">
 						<div class="accordion-inner">
 							功能块...
 						</div>
@@ -108,5 +131,24 @@
 </div>
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+	
+	$(".icon-right").click(function(){
+		$(this).css("display","none");
+		$(".icon-left").css("display","block");
+		$(".accordion-body").css("display","none");
+		$(".accordion-toggleuser").css("display","none");
+		$(".tri2").css("display","none");
+		$(".accordion").css("width","30px")
+	});
+	$(".icon-left").click(function(){
+		$(this).css("display","none");
+		$(".icon-right").css("display","block");
+		$(".accordion-body").css("display","block");
+		$(".accordion-toggleuser").css("display","block");
+		$(".tri2").css({"display":"block","float":"right"});
+		$(".accordion").css("width","150px")
+	})
+</script>
 </body>
 </html>

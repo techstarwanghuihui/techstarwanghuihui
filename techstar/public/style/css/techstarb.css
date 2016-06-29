@@ -1,12 +1,81 @@
+*{
+	margin:0;
+	padding:0;
+}
 #top{
-	height: 37px;
+	height: 47px;
 	background-color: #148dcb;
-	width: 100%;
+	width: 1346px !important;
 	
 }
+.logo{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-right:20px;
+}
+.brand{
+	margin-top: -3px;
+	color:#ffffff !important;
+	font-family: "宋体";
+}
+
+.navbar .brand {
+    font-weight: none;
+    text-shadow: none;
+}
+.dropdown-toggle{
+	display: block;
+	float: left;
+	border-left: 2px solid  #2197d1;
+	
+	color:#ffffff !important;
+	font-family: "宋体";
+	margin-right: 10px;
+}
+.navbar .nav>li>a {
+	margin-top: 5px;
+    text-shadow: none;
+}
+.navbar .nav li.dropdown>.dropdown-toggle .caret {
+    border-top-color: #fff;
+    border-bottom-color: #777;
+}
+.techstar{
+	font-size: 17px;
+	color:#fff !important;
+}
+.dropdown-mob{
+	overflow: hidden;
+}
+.phone{
+	display: block;
+	float: left;
+	color:#fff;
+	margin-top: 15px;
+	/*line-height: 47px;*/
+	/*margin-right: 10px;*/
+}
+
+.tri{
+	display: block;
+	float: right !important;
+	margin-top: 5px;
+}
+
+
+/*左边菜单*/
+.navbar{
+	margin-bottom: 0px !important;
+}
+.accordion-group {
+   
+     border:none; 
+   
+}
 #accordion-636066{
-	width: 130px;
-	height: 768px;
+	width: 150px;
+	height:620px;
 	background-color: #283038;
 	color:#ffffff;
 }
@@ -17,7 +86,52 @@
 .accordion-inner {
     padding: 9px 15px;
     border: 0px !important;
+    margin-left: 30px;
 }
 .icon{
 	float: left;
+}
+.tri1{
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.accordion-toggleser{
+	display: block;
+	float: left;
+
+}
+.accordion-heading .accordion-toggle {
+   line-height: 30px;
+     padding: 0px 0px; 
+}
+.accordion-heading .accordion-toggle:hover{
+	color:#fff;
+}
+.tri2{
+	display: block;
+	float: right;
+	margin-top: -20px !important;
+	margin-right: 5px;
+	font-size: 10px !important;
+}
+.accordion-body{
+	margin-left: -10px;
+}
+.sidebar{
+	height: 30px;
+	background-color: #384454;
+}
+.sidebar i{
+	line-height:30px;
+}
+.icon-left{
+	display: none;
+}
+.icon-right{
+	margin-left: 60px;
+}
+.sidebar:hover{
+	cursor: pointer;
 }

@@ -5,13 +5,15 @@
 #top{
 	height: 47px;
 	background-color: #148dcb;
-	width: 1346px !important;
+	width: 1349px !important;
 	
 }
 .logo{
+	width: 37px;
+	height: auto;
 	display: block;
 	float: left;
-	margin-top: 10px;
+	margin-top: 3px;
 	margin-right:20px;
 }
 .brand{
@@ -28,7 +30,7 @@
 	display: block;
 	float: left;
 	border-left: 2px solid  #2197d1;
-	
+	border-radius: 0px !important; 
 	color:#ffffff !important;
 	font-family: "宋体";
 	margin-right: 10px;
@@ -94,7 +96,8 @@
 .tri1{
 	display: block;
 	float: left;
-	margin-top: 5px;
+	font-size: 10px !important;
+	margin-top: 10px;
 	margin-right: 10px;
 }
 .accordion-toggleser{
@@ -112,7 +115,7 @@
 .tri2{
 	display: block;
 	float: right;
-	margin-top: -20px !important;
+	margin-top: -21px !important;
 	margin-right: 5px;
 	font-size: 10px !important;
 }
